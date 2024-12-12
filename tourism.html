@@ -23,6 +23,7 @@
             justify-content: center;
             gap: 20px;
             width: 80%;
+            margin-top: 7vh;
         }
 
         .card {
@@ -55,6 +56,35 @@
             text-align: justify;
         }
 
+        header {
+            width: 100%;
+            top: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+            position:fixed;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1.2rem;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #1e6091;
+            color: #f5fafa;
+        }
+
         @media (max-width: 768px) {
             .container {
                 width: 90%;
@@ -68,6 +98,13 @@
     </style>
 </head>
 <body>
+    <header>
+        <nav>
+            <a href="/My-City/index.html">Home</a>
+            <a href="/My-City/tourism.html">Tourist Places</a>
+            <a href="/My-City/jaggery.html">Jaggery Market</a>
+        </nav>
+    </header>
     <div class="container">
         <div class="card">
             <img src="https://www.ftd.travel/upload/attraction_image/2012-09-15-09-40-00bojjana-konda.jpg" alt="Bojjana Konda">
