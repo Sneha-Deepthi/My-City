@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anakapalli</title>
+    <style>
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #08487c, #1e6091);
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            height: 100vh;
+            overflow: hidden;
+            padding: 20px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            line-height: 1.2;
+            margin: 0;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        blockquote {
+            font-style: italic;
+            font-size: 1.5rem;
+            color: #cfe4ea;
+            margin: 15px 0 0;
+            border-left: 5px solid #f5fafa;
+            padding-left: 10px;
+            animation: fadeIn 2.5s ease-in-out;
+        }
+
+        img {
+            border-radius: 50%;
+            height: 50vh;
+            width: auto;
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.6);
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Introducing my Home Town<br>~ Anakapalli
+    </h1>
+    <blockquote>The second largest jaggery market of India</blockquote>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI7PVYYiK_Ho-hWW16yoeFcDZC6RqLYNg8c-TijP04WsF7nXghOOcBt3DoVdybeTtInDQ&usqp=CAU" alt="Anakapalli Image">
+</body>
+</html>
