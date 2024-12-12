@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anakapalli Tourism</title>
+    <style>
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #08487c, #1e6091);
+            color: #f5fafa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            width: 80%;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            width: 300px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .card p {
+            padding: 15px;
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #ffffff;
+            text-align: justify;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+                gap: 10px;
+            }
+
+            .card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="https://www.ftd.travel/upload/attraction_image/2012-09-15-09-40-00bojjana-konda.jpg" alt="Bojjana Konda">
+            <p>Bojjana Konda represents a significant aspect of Indian history that is surely going to leave you in awe. It is a major tourist attraction and this Buddhist heritage site depicts how culturally rich and extravagant our ancestry imbibed us with.</p>
+        </div>
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9GjsGeEGHXuV9-S0qmwoWkrkUc2YelEQtDA&s" alt="Serene Lake">
+            <p>Serene lake & bird sanctuary with tours in palm-tree boats amid lotus flowers & picturesque views.</p>
+        </div>
+    </div>
+</body>
+</html>
