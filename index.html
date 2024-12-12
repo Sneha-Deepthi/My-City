@@ -32,10 +32,39 @@
             animation: fadeIn 1.5s ease-in-out;
         }
 
+        header {
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1.2rem;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #1e6091;
+            color: #f5fafa;
+        }
+
         h1 {
             font-size: 3.5rem;
             line-height: 1.2;
-            margin: 0;
+            margin: 70px 0 0; /* Push content below nav */
             animation: fadeIn 2s ease-in-out;
         }
 
@@ -67,10 +96,17 @@
     </style>
 </head>
 <body>
-    <h1>
+    <header>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#tourist-places">Tourist Places</a>
+            <a href="#jaggery-market">Jaggery Market</a>
+        </nav>
+    </header>
+    <h1 id="home">
         Introducing my Home Town<br>~ Anakapalli
     </h1>
-    <blockquote>The second largest jaggery market of India</blockquote>
+    <blockquote id="jaggery-market">The second largest jaggery market of India</blockquote>
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI7PVYYiK_Ho-hWW16yoeFcDZC6RqLYNg8c-TijP04WsF7nXghOOcBt3DoVdybeTtInDQ&usqp=CAU" alt="Anakapalli Image">
 </body>
 </html>
